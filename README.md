@@ -48,7 +48,7 @@ async function learnLinear(){
       // 1° parametro => valores passados
       // 2° parametro => quantidade de linhas e quantidade de colunas
       const xs = tf.tensor2d([-1, 0, 1, 2, 3, 4], [6, 1]); 
-      const yx = tf.tensor2d([-1, 1, 3, 5, 7, 9], [6, 1]);
+      const ys = tf.tensor2d([-1, 1, 3, 5, 7, 9], [6, 1]);
 
       // treinando o modelo a partir dos valores de x e y 250 vezes 
       await model.fit(xs,ys, {epochs: 250});
